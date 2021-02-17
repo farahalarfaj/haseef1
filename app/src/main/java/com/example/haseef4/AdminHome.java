@@ -14,27 +14,27 @@ public class AdminHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_staff);
 
-        ImageView statistic=findViewById(R.id.statistic);
-        ImageView statistic_icons=findViewById(R.id.statistic_icons);
+        ImageView staff=findViewById(R.id.staff);
+        ImageView staff_icons=findViewById(R.id.staff_icons);
 
-//        statistic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                goTostatistic();
-//            }
-//        });
-//        statistic_icons.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                goTostatistic();
-//            }
-//        });
-//    }
-//    private void goTostatistic(){
-//        Intent intent = new Intent(this, statistic.class);
-//        startActivity(intent);
-//    }
+        staff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+             goTostaff();
+         }
+    });
+      staff_icons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goTostaff();
+            }
+        });
+    }
+   private void goTostaff(){
+       Intent intent = new Intent(this, staff1.class);
+       startActivity(intent);
+    }
 
     }
 
-}
+
